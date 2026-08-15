@@ -1,4 +1,4 @@
-# This project is a finance tracker. It will continue to be developed further, and I also plan to create a finance tracker program in the future (for Windows, Linux, and Android, but at minimum for Desktop).
+This project is a finance tracker. It will continue to be developed further, and I also plan to create a finance tracker program in the future (for Windows, Linux, and Android, but at minimum for Desktop).
 ⠀
 The "Finance Tracker" is launched via the console.
 ⠀
@@ -68,7 +68,7 @@ I might add something else as well. Stay tuned for updates! Good luck to everyon
 <br>
 <br>
 
-# Этот проект представляет собой финансовый трекер. В дальнейшем он будет дорабатываться, и я также планирую в будущем создать программу с финансовым трекером (для Windows, Linux и Android, но как минимум для Desktop).
+Этот проект представляет собой финансовый трекер. В дальнейшем он будет дорабатываться, и я также планирую в будущем создать программу с финансовым трекером (для Windows, Linux и Android, но как минимум для Desktop).
 ⠀
 «Финансовый трекер» запускается с помощью консоли.
 ⠀
