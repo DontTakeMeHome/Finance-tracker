@@ -39,7 +39,7 @@ def setup_db():
 
 
 def add_record(table: str, amount: Decimal, category: str, description: str = ""):
-    _check_table(table)
+    check_table(table)
     conn = sqlite3.connect("finance.db")
     cur = conn.cursor()
     cur.execute(f"""
@@ -51,7 +51,7 @@ def add_record(table: str, amount: Decimal, category: str, description: str = ""
 
 
 def show_records(table: str):
-    _check_table(table)
+    check_table(table)
     conn = sqlite3.connect("finance.db")
     cur = conn.cursor()
     cur.execute(f"SELECT * FROM {table}")
@@ -84,7 +84,7 @@ def show_records(table: str):
 
 
 def update_record(table: str, record_id: int, amount: Decimal, category: str, description: str = ""):
-    _check_table(table)
+    check_table(table)
     conn = sqlite3.connect("finance.db")
     cur = conn.cursor()
     cur.execute(f"""
@@ -97,7 +97,7 @@ def update_record(table: str, record_id: int, amount: Decimal, category: str, de
 
 
 def delete_record(table: str, record_id: int):
-    _check_table(table)
+    check_table(table)
     conn = sqlite3.connect("finance.db")
     cur = conn.cursor()
     cur.execute(f"DELETE FROM {table} WHERE ID = ?", (record_id,))
@@ -123,7 +123,7 @@ def main():
                           )
             return
 
-        table = _resolve_table(sys.argv[2])
+        table = resolve_table(sys.argv[2])
         if table is None:
             return
 
@@ -144,7 +144,7 @@ def main():
             console.print("[bold red]Error: specify type — income or expense.[/bold red]")
             return
 
-        table = _resolve_table(sys.argv[2])
+        table = resolve_table(sys.argv[2])
         if table is None:
             return
 
